@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: booknest
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv23lio5GFjbheYT4JSZ
+            client-secret: dee98d490f2ca1377624225ceb4082f0c3c0e95b
+  data:
+    cassandra:
+      keyspace-name: main
+      username: NpCxppPOOzAamDWRHIUheZUr
+      password: xqZjvfONiUavKnO0xA4zeAjP6rXFgqFXne.9O61CJgeG+a+0emC7,vE6Dxa3Zo-_jsL78HOZy6QkIQEJkue8dB2LpZyobdpen,A1LKyA8-gMMr4JX.L95Yfa2r3CLHKJ
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+
+astra.db:
+    id: 97c0589c-a65d-417b-bfa3-f1087d73f066
+    region: us-east1
+    keyspace: main
+    application.token: AstraCS:NpCxppPOOzAamDWRHIUheZUr:7e64f9e6e8d0691d2a679e8544ab642e7207350d02f08d51bab4b6cd4c95f8b5
